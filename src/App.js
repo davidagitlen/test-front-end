@@ -18,9 +18,7 @@ class App extends Component{
     try { 
     console.log('trying the fetch!', url)
     const snacks = await fetch(url);
-    console.log(snacks)
     const parsedSnacks = await snacks.json();
-    console.log(parsedSnacks)
     this.setState({snacks: [...this.state.snacks, ...parsedSnacks.snacks]})
     } catch (error) {
     this.setState({error})
