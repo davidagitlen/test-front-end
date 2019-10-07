@@ -11,7 +11,7 @@ class App extends Component{
   }
 
   componentDidMount() {
-    this.fetchData(process.env.REACT_APP_BACKEND_URL + 'api/v1/snacks')
+    this.fetchData(process.env.REACT_APP_BACKEND_URL + '/api/v1/snacks')
   }
 
   fetchData = async (url) => {
